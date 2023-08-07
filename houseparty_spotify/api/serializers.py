@@ -5,6 +5,7 @@ class RoomSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Room
+        # fields that we want to include in the serialization
         fields = ('id', 'code', 'host', 'guest_can_pause', 'votes_to_skip', 'created_at')
         
 
